@@ -22,8 +22,25 @@ def decryptCaesar(offset, text):
     encryptCaesar(-offset, text)
     
 import operator
+
+def gatherFreq(text: str):
+    charDict = {}
+    for c in text:
+        c = c.lower()
+        if c in charDict:
+            charDict[c] += 1;
+        else:
+            if ((c >= 'A') and (c <= 'Z')) or ((c >= 'a') and (c <= 'z')):
+                charDict[c] = 1; 
+ 
+    sortedDict = sorted(charDict.items(), key = operator.itemgetter(1))
+    sortedChars = ''.join([i[0] for i in sortedDict])
+    sortedChars += sortedChars.upper() 
+    return sortedChars
     
-def decryptFrequency(text):
+    
+    
+def decryptFrequency(text, charFreq):
     charDict = {}
     symbols = set()
     for c in text:
@@ -37,21 +54,21 @@ def decryptFrequency(text):
                 symbols.add(c)
             
     symStr = ''.join(list(symbols))
-                
-    print(charDict)   
  
     sortedDict = sorted(charDict.items(), key = operator.itemgetter(1))
     sortedChars = ''.join([i[0] for i in sortedDict])
     sortedChars += sortedChars.upper() + symStr
+    print("sortedChars")
     print(sortedChars)
+    print()
     
     fChars = charFreq + symStr
-    
+    print("fChars")
     print(fChars)
+    print()
     
     trns = str.maketrans(sortedChars, fChars)
     result = text.translate(trns)
-    #print(result)
     return(result)
     
 def getTranslationAlphabet(text):
@@ -90,8 +107,10 @@ def decryptBigramFrequency(text: str):
     
     charDict = {}
     symbols = set()
-    pc: chr = ' '
+    pc: chr = ' ' #previous char
     for c in text:
+        if c == ' ':
+            continue
         c = c.lower()
         s = pc + c
         if s in charDict:
@@ -131,7 +150,7 @@ def decryptBigramFrequency(text: str):
     l = len(text)
     i = 1
     
-    while (i < l):
+    while (i < l - 1):
         p = text[i-1]
         c = text[i]
         n = text[i+1]
@@ -141,23 +160,33 @@ def decryptBigramFrequency(text: str):
         
         v1 = charDict.get(bigram1)
         v2 = charDict.get(bigram2)
-        r: str
+        r: str = ''
         index: int
         
         if v1:
             if v2:
                 if max(v1, v2) == v1:
-                    r = sortedDict.get(bigram1)[1]
+                    a = sortedDict.get(bigram1)
+                    if a != None:
+                        r = a[1]
                 else:
-                    r = sortedDict.get(bigram2)[0]
+                    a = sortedDict.get(bigram2)
+                    if a != None:
+                        r = a[0]
+                    #r = sortedDict.get(bigram2)[0]
             else:
-                r = sortedDict.get(bigram1)[1]
+                a = sortedDict.get(bigram1)
+                if a != None:
+                    r = a[1]
+                #r = sortedDict.get(bigram1)[1]
         else:
             if v2:
-                r = sortedDict.get(bigram2)[0]
-            else:
-                r = c.translate(trns)
+                a = sortedDict.get(bigram2)
+                if a != None:
+                    r = a[0]
              
+        if r == '':
+            r = c.translate(trns)
         result += r
         
         i = i + 1
@@ -176,14 +205,23 @@ offset = int(input("Please enter your offset: ")) % 26
 
 with open('thehobbit.txt', 'r', encoding='utf-8') as content_file:
     content = content_file.read()
+    third = content[0:round(len(content) / 3)]
+    freq = gatherFreq(third)
     enc = encryptCaesar(offset, content)
+    
+print("FREQ")
+print(freq)
+print()
+    
+with open('enc.txt', 'w', encoding='utf-8') as content_file:
+    content_file.write(enc)
 
 #decryptCaesar(offset, enc)
-dec = decryptFrequency(enc)
+dec = decryptFrequency(enc, freq)
 
-#with open('decrypted.txt', 'w', encoding='utf-8') as content_file:
- #   content_file.write(dec)
+with open('decrypted.txt', 'w', encoding='utf-8') as content_file:
+    content_file.write(dec)
     
-dec2 = decryptBigramFrequency(enc)
+dec2 = decryptBigramFrequency(enc, freq)
 with open('decryptedBigram.txt', 'w', encoding='utf-8') as content_file:
     content_file.write(dec2)
