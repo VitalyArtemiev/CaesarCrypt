@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4343a95c-8544-4e34-ac81-477022b9b711" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/RSA/RSA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/DH/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/DH/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSA.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSA/Eratosthenes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSA/GFG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSA/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSA/testRabinMiller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Eratosthenes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GFG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testRabinMiller.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectId" id="1YTU06Xq5kqqEQSYKuAk1CiEART" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574232459438" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="RSA" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4343a95c-8544-4e34-ac81-477022b9b711" name="Default Changelist" comment="" />
+      <created>1571755840678</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571755840678</updated>
+      <workItem from="1571755865460" duration="1065000" />
+      <workItem from="1571760774572" duration="5686000" />
+      <workItem from="1571773899747" duration="3218000" />
+      <workItem from="1571813537383" duration="4568000" />
+      <workItem from="1572001899061" duration="521000" />
+      <workItem from="1572180132165" duration="644000" />
+      <workItem from="1573220768758" duration="3574000" />
+      <workItem from="1573295740969" duration="2894000" />
+      <workItem from="1574177244361" duration="1788000" />
+      <workItem from="1574232098181" duration="413000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="24371000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="801" y="413" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582965865367">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="801" y="413" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1582965865367" />
+    <state width="937" height="276" key="GridCell.Tab.0.bottom" timestamp="1583566750072">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1583566750072" />
+    <state width="937" height="276" key="GridCell.Tab.0.center" timestamp="1583566750071">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1583566750071" />
+    <state width="937" height="276" key="GridCell.Tab.0.left" timestamp="1583566750071">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1583566750071" />
+    <state width="937" height="276" key="GridCell.Tab.0.right" timestamp="1583566750071">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state width="937" height="276" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1583566750071" />
+    <state x="616" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1583531209934">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="616" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1583531209934" />
+  </component>
+</project>
