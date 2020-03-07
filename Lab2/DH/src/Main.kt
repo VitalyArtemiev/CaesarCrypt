@@ -1,6 +1,4 @@
 import java.math.BigInteger
-import java.math.BigInteger.*
-import kotlin.math.*
 
 fun main() {
     // Both the persons will be agreed upon the  
